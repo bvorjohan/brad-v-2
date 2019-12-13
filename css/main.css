@@ -5,6 +5,8 @@ body {
   padding: 0;
 }
 
+
+
 body,
 button {
   background: #fff;
@@ -17,13 +19,14 @@ font-family: 'Nunito', sans-serif;
   color: #000;
 }
 
-body.dark-mode,
-body.dark-mode button,
-button.dark-mode,
-button.dark-mode button {
-  background: #000;
-  color: #fff;
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 button {
   width: 120px;
@@ -35,10 +38,15 @@ button {
   font-size: 1rem;
   overflow: auto;
   transition: 0.4s ease all;
+  margin: 0 auto;
 }
 button:hover {
   background: rgba(150, 151, 156, 0.1);
   cursor: pointer;
+}
+
+#contactForm {
+  display: none;
 }
 
 .container {
@@ -63,52 +71,6 @@ button:hover {
   max-width: 350px;
 }
 
-.dark-mode-toggler {
-  position: fixed;
-  top: 5px;
-  right: 5px;
-}
-.dark-mode-toggler label {
-  position: relative;
-}
-.dark-mode-toggler input[type="checkbox"] {
-  display: none;
-}
-.dark-mode-toggler input[type="checkbox"] + label::before {
-  content: "";
-  display: block;
-  height: 26px;
-  width: 60px;
-  background: #fff;
-  border: 2px solid #96979c;
-  border-radius: 15px;
-  position: absolute;
-  top: 0px;
-  left: -65px;
-}
-.dark-mode-toggler input[type="checkbox"] + label::after {
-  content: "";
-  display: block;
-  height: 20px;
-  width: 20px;
-  background: #96979c;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 3px;
-  left: -62px;
-  transition: all 0.4s ease-in;
-}
-.dark-mode-toggler input[type="checkbox"]:checked + label::before {
-  background: #000;
-  border: 2px solid #fff;
-}
-.dark-mode-toggler input[type="checkbox"]:checked + label::after {
-  left: -28px;
-  background: #000;
-  border: 2px solid #fff;
-  transition: all 0.4s ease-in;
-}
 
 h1 {
   font-weight: 400;
@@ -128,23 +90,6 @@ a:hover {
   font-weight: bold;
 }
 
-.img-frame {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 0 0 10px 0;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.img-frame img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 100%;
-}
-
 .links {
   margin: 25px 0;
 }
@@ -152,30 +97,6 @@ a:hover {
   padding: 0 16px 0 0;
 }
 
-.newsletter-blurb {
-  margin: 30px 0;
-  line-height: 2em;
-}
-
-.newsletter-blurb span {
-  color: #eb4888;
-}
-
-.newsletter-blurb span.green {
-  color: #24d05a;
-}
-
-.newsletter-blurb span.blue {
-  color: #10a2f5;
-}
-
-.newsletter-blurb span.yellow {
-  color: #e9bc3f;
-}
-
-.sneaky-sponsor {
-  color: #96979c;
-}
 
 @media (max-width: 600px) {
   .links {
@@ -183,23 +104,11 @@ a:hover {
   }
 }
 
-.toggler {
-  margin: 25px 0;
-}
-.toggler .show {
-  border-color: #eb4888;
-  color: #eb4888;
-}
-@media (max-width: 600px) {
-  .toggler {
-    text-align: center;
-  }
-  .toggler button {
-    margin: 5px;
-  }
-}
 
-.bio {
+
+
+
+/* .bio {
   display: none;
   line-height: 24px;
 }
@@ -210,4 +119,4 @@ a:hover {
 }
 .bio.show {
   display: block;
-}
+} */
