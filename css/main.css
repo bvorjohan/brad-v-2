@@ -31,14 +31,33 @@ font-family: 'Nunito', sans-serif;
 button {
   width: 120px;
   height: 30px;
-  border: 2px solid #96979c;
+  border: 2px solid #3581B8;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #96979c;
+  color: #3581B8;
+  /* background-color: #F18805; */
   font-size: 1rem;
   overflow: auto;
   transition: 0.4s ease all;
   margin: 0 auto;
+  box-shadow:
+  /* https://brumm.af/shadows
+  6
+  0.15
+  25px
+  114px
+  0px */
+   0 0.7px 3.2px rgba(0, 0, 0, 0.042),
+   0 1.7px 7.6px rgba(0, 0, 0, 0.061),
+   0 3.1px 14.3px rgba(0, 0, 0, 0.075),
+   0 5.6px 25.5px rgba(0, 0, 0, 0.089),
+   0 10.4px 47.6px rgba(0, 0, 0, 0.108),
+   0 25px 114px rgba(0, 0, 0, 0.15)
+ ;
+
+
+
+
 }
 button:hover {
   background: rgba(150, 151, 156, 0.1);
@@ -78,13 +97,13 @@ h1 {
 }
 
 h2 {
-  color: #96979c;
+  color: #3581B8;
   font-weight: 300;
   margin: 0 0 0.5em 0;
 }
 
 a {
-  color: #96979c;
+  color: #3581B8;
 }
 a:hover {
   font-weight: bold;
