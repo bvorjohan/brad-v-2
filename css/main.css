@@ -14,8 +14,96 @@ button {
 font-family: 'Nunito', sans-serif;
 }
 
+
+.container {
+  margin: 50px auto;
+  padding: 5px;
+  max-width: 650px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+
+.header-frame {
+  max-width: 350px;
+  margin: 0 0 0 0
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  color: #3581B8;
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
+}
+
+a {
+  color: #3581B8;
+}
+a:hover {
+  font-weight: bold;
+}
+
+
+
+/* .img-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 0 10px 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-frame img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+} */
+
+
+.img-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 50px 10px 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-frame img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+
+
+
 ::selection {
-  background-color: #eb4888;
+  background-color: #F18805;
   color: #000;
 }
 
@@ -35,7 +123,6 @@ button {
   border-radius: 15px;
   box-sizing: border-box;
   color: #3581B8;
-  /* background-color: #F18805; */
   font-size: 1rem;
   overflow: auto;
   transition: 0.4s ease all;
@@ -68,16 +155,8 @@ button:hover {
   display: none;
 }
 
-.container {
-  margin: 50px auto;
-  padding: 5px;
-  max-width: 650px;
-}
-@media (max-width: 600px) {
-  .container {
-    padding: 20px;
-  }
-}
+
+
 
 .header-section {
   display: flex;
@@ -91,23 +170,8 @@ button:hover {
 }
 
 
-h1 {
-  font-weight: 400;
-  margin: 0;
-}
 
-h2 {
-  color: #3581B8;
-  font-weight: 300;
-  margin: 0 0 0.5em 0;
-}
 
-a {
-  color: #3581B8;
-}
-a:hover {
-  font-weight: bold;
-}
 
 .links {
   margin: 25px 0;
@@ -122,3 +186,161 @@ a:hover {
     text-align: center;
   }
 }
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button {
+  background: #fff;
+  color: #000;
+  font-family: "Roboto Mono", monospace;
+}
+
+
+.container {
+  margin: 50px auto;
+  padding: 5px;
+  max-width: 650px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+
+
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+.header-frame {
+  max-width: 350px;
+}
+
+
+
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  color: #96979c;
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
+}
+
+
+a:hover {
+  font-weight: bold;
+}
+
+
+
+
+.img-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 0 10px 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-frame img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+
+
+
+.links {
+  margin: 25px 0;
+}
+.links a:not(:last-child) {
+  padding: 0 16px 0 0;
+}
+
+.newsletter-blurb {
+  margin: 30px 0;
+  line-height: 2em;
+}
+
+.newsletter-blurb span {
+  color: #eb4888;
+}
+
+.newsletter-blurb span.green {
+  color: #24d05a;
+}
+
+.newsletter-blurb span.blue {
+  color: #10a2f5;
+}
+
+.newsletter-blurb span.yellow {
+  color: #e9bc3f;
+}
+
+.sneaky-sponsor {
+  color: #96979c;
+}
+
+@media (max-width: 600px) {
+  .links {
+    text-align: center;
+  }
+}
+
+.toggler {
+  margin: 25px 0;
+}
+.toggler .show {
+  border-color: #eb4888;
+  color: #eb4888;
+}
+@media (max-width: 600px) {
+  .toggler {
+    text-align: center;
+  }
+  .toggler button {
+    margin: 5px;
+  }
+}
+
+.bio {
+  display: none;
+  line-height: 24px;
+}
+.bio br {
+  display: block;
+  content: "";
+  height: 15px;
+}
+.bio.show {
+  display: block;
+}
+
+*/
