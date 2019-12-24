@@ -5,15 +5,12 @@ body {
   padding: 0;
 }
 
-
-
 body,
 button {
   background: #fff;
   color: #000;
-font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
-
 
 .container {
   margin: 50px auto;
@@ -27,17 +24,12 @@ font-family: 'Nunito', sans-serif;
   }
 }
 
-
-
 .header-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
-
-
 
 .header-frame {
   max-width: 350px;
@@ -58,12 +50,10 @@ h2 {
 a {
   color: #3581B8;
 }
+
 /* a:hover {
   font-weight: bold;
 } */
-
-
-
 /* .img-frame {
   position: relative;
   width: 200px;
@@ -80,8 +70,6 @@ a {
   transform: translate(-50%, -50%);
   height: 100%;
 } */
-
-
 .img-frame {
   position: relative;
   width: 200px;
@@ -89,7 +77,21 @@ a {
   margin: 0 50px 10px 50px;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow:
+    /* https://brumm.af/shadows
+  6
+  0.15
+  25px
+  114px
+  0px */
+    0 0.7px 3.2px rgba(0, 0, 0, 0.042),
+    0 1.7px 7.6px rgba(0, 0, 0, 0.061),
+    0 3.1px 14.3px rgba(0, 0, 0, 0.075),
+    0 5.6px 25.5px rgba(0, 0, 0, 0.089),
+    0 10.4px 47.6px rgba(0, 0, 0, 0.108),
+    0 25px 114px rgba(0, 0, 0, 0.15);
 }
+
 .img-frame img {
   position: absolute;
   top: 50%;
@@ -99,14 +101,10 @@ a {
   height: 100%;
 }
 
-
-
-
 ::selection {
   background-color: #F18805;
   color: #000;
 }
-
 
 .buttonContainer {
   width: 100%;
@@ -115,9 +113,9 @@ a {
   justify-content: center;
 }
 
-
 button {
-  width: 120px;
+  /* width: 120px; */
+  width: 140px;
   height: 30px;
   border: 2px solid #3581B8;
   border-radius: 15px;
@@ -128,24 +126,20 @@ button {
   transition: 0.4s ease all;
   margin: 0 auto;
   box-shadow:
-  /* https://brumm.af/shadows
+    /* https://brumm.af/shadows
   6
   0.15
   25px
   114px
   0px */
-   0 0.7px 3.2px rgba(0, 0, 0, 0.042),
-   0 1.7px 7.6px rgba(0, 0, 0, 0.061),
-   0 3.1px 14.3px rgba(0, 0, 0, 0.075),
-   0 5.6px 25.5px rgba(0, 0, 0, 0.089),
-   0 10.4px 47.6px rgba(0, 0, 0, 0.108),
-   0 25px 114px rgba(0, 0, 0, 0.15)
- ;
-
-
-
-
+    0 0.7px 3.2px rgba(0, 0, 0, 0.042),
+    0 1.7px 7.6px rgba(0, 0, 0, 0.061),
+    0 3.1px 14.3px rgba(0, 0, 0, 0.075),
+    0 5.6px 25.5px rgba(0, 0, 0, 0.089),
+    0 10.4px 47.6px rgba(0, 0, 0, 0.108),
+    0 25px 114px rgba(0, 0, 0, 0.15);
 }
+
 button:hover {
   background: rgba(150, 151, 156, 0.1);
   cursor: pointer;
@@ -154,9 +148,6 @@ button:hover {
 #contactForm {
   display: none;
 }
-
-
-
 
 .header-section {
   display: flex;
@@ -169,17 +160,13 @@ button:hover {
   max-width: 350px;
 }
 
-
-
-
-
 .links {
   margin: 25px 0;
 }
+
 .links a:not(:last-child) {
   padding: 0 16px 0 0;
 }
-
 
 @media (max-width: 600px) {
   .links {
