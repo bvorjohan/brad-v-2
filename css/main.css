@@ -24,6 +24,8 @@ button {
   }
 }
 
+
+
 .header-section {
   display: flex;
   align-items: center;
@@ -45,6 +47,10 @@ h2 {
   color: #3581B8;
   font-weight: 300;
   margin: 0 0 0.5em 0;
+}
+
+h3 {
+  color: #3581B8;
 }
 
 a {
@@ -114,7 +120,6 @@ a {
 }
 
 button {
-  /* width: 120px; */
   width: 140px;
   height: 30px;
   border: 2px solid #3581B8;
@@ -124,7 +129,9 @@ button {
   font-size: 1rem;
   overflow: auto;
   transition: 0.4s ease all;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
   box-shadow:
     /* https://brumm.af/shadows
   6
@@ -143,6 +150,16 @@ button {
 button:hover {
   background: rgba(150, 151, 156, 0.1);
   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .buttonContainer{
+    flex-direction: column;
+  }
+
+  button{
+    margin-bottom: 10px;
+  }
 }
 
 #contactForm {
