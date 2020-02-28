@@ -57,25 +57,6 @@ a {
   color: #3581B8;
 }
 
-/* a:hover {
-  font-weight: bold;
-} */
-/* .img-frame {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 0 0 10px 0;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.img-frame img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 100%;
-} */
 .img-frame {
   position: relative;
   width: 200px;
@@ -152,7 +133,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .buttonContainer{
     flex-direction: column;
   }
@@ -160,6 +141,50 @@ button:hover {
   button{
     margin-bottom: 10px;
   }
+}
+
+.portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+margin-top: 1rem;
+margin-bottom: 1rem;
+
+}
+
+
+
+.portfolio-link-wrapper {
+  border: 2px solid #3581B8;
+  border-radius: 0.5em;
+  margin: 1rem;
+  width: 16em;
+  min-width: 10em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow:
+  0 0.4px 8.2px -21px rgba(0, 0, 0, 0.104),
+  0 1px 19.6px -21px rgba(0, 0, 0, 0.149),
+  0 1.9px 36.9px -21px rgba(0, 0, 0, 0.185),
+  0 3.4px 65.9px -21px rgba(0, 0, 0, 0.221),
+  0 6.3px 123.2px -21px rgba(0, 0, 0, 0.266),
+  0 15px 295px -21px rgba(0, 0, 0, 0.37)
+;
+
+}
+
+
+
+.portfolio-link-wrapper:hover {
+  background: rgba(150, 151, 156, 0.1);
+  cursor: pointer;
+}
+
+
+
+
+.portfolio-link {
 }
 
 #contactForm {

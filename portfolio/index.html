@@ -3,12 +3,12 @@
 
 <head>
   <title>Brad Vorjohan</title>
-  <meta name="description" content="Brad Vorjohan, Developer and Product Manager" />
+  <meta name="description" content="Brad Vorjohan's Portfolio'" />
 
   <!-- Twitter data -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Brad Vorjohan">
-  <meta name="twitter:description" content="Brad Vorjohan, Developer and Product Manager">
+  <meta name="twitter:description" content="Brad Vorjohan Portfolio">
   <meta name="twitter:creator" content="@bvorjohan">
   <meta name="twitter:image" content="http://brad-v.me/img/profile_square.png">
 
@@ -31,7 +31,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-  <link href="../css/main.css?v=1.0.1" rel="stylesheet">
+  <link href="../css/main.css?v=1.0.2" rel="stylesheet">
   <script type='text/javascript' src='js/main.js'></script>
 </head>
 
@@ -53,54 +53,22 @@
         <img id="propic" src="https://brad-v.me/img/profile_square_400x400.png" alt="Brad Vorjohan's profile photo"></img>
       </div>
     </div>
-    <div class="overview">
-      <h1>Overview</h1>
-      <p>
-        Appian has a unified user portal called Home. Home is where many aspects
-        of an employee’s life live -- Marketing creates campaigns, Sales tracks
-        customer relationships, Engineering pushes features, and all employees
-        experience events like promotions, departures, and company-wide all-hand
-        meetings through Home. Home was notably missing a way to track the
-        status of external applications, such as Netsuite, Concur, and
-        Salesforce. Often, reporting of these outages are handled through our
-        system’s administrator, and have limited availability to our employee
-        end users. I proposed creating an external application tracking app that
-        would both solve this need and allow us to test our newly-available RPA
-        technology.
-</p>
-    </div>
+    <h1>Portfolio</h1>
+    <div class="portfolio-links">
 
-    <div class="summary">
-      <h1>Summary</h1>
-      <h3>Problem:</h3>
-      <p>
-        While many of Appian’s employees reap the benefits of a centralized work
-        portal, many also suffer from lack of knowledge and reporting on
-        external systems when there is maintenance or an unplanned outage.
-      </p>
-      <h3>Strategy:</h3>
-      <p>
-        Strategy here was more or less handed to us -- we had a known problem
-        with a conceptually straightforward solution, and new technology DYING
-        to be used for this.
-      </p>
-      <h3>Solution:</h3>
-      <p>
-        Using Appian’s newly-acquired RPA technology, we built a backend process
-        that checks the public-facing cloud status page for the relevant page
-        status details. New outages will create a Home post (think like a News
-        Post on Facebook), and resolved outages will update the original post to
-        indicate that the outage is resolved. Furthermore, employees can check a
-        real-time dashboard for the current status, and subscribe for email
-        updates about outages.
-      </p>
-      <h3>Result:</h3>
-      <p>
-        All Appian employees now have access to a real-time dashboard that
-        increases proactive visibility about current cloud application outages,
-        and email notifications if you want.
-      </p>
+      <a class="portfolio-link-wrapper" href="./heartbeat.html">
+        <h3>Web Application Heartbeat</h3>
+      </a>
+
+
+      <div class="portfolio-link-wrapper">
+        <h3>Price Quote Finance Review</h3>
+      </div>
+
     </div>
+    <!-- <div id="spacer" style="height: 100px;"  ></div> -->
+
+
     <div class="buttonContainer">
       <button onclick="window.location.href = 'https://brad-v.me/contact.html';">Contact Me</button>
       <button onclick="window.location.href = 'https://brad-v.me/timeline.html';">More About Me</button>
